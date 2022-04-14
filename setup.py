@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name             = 'pygifconvt_minyeoung',
-    version          = '1.0.0',
+    version          = '1.0.1',
     description      = 'Test package for distribution',
     author           = 'minyeoung',
     author_email     = 'cjrcjrdl1@naver.com',

@@ -22,6 +22,8 @@ $ pip install git+https://github.com/cjrcjrdl1/pygifconvt_minyeoung.git
  >>> from pygifconvt.converter import GifConverter
  >>> c = GifConverter("your original images path", 'your gif output path', (320,240))
  >>> c.convert_gif()
+
+ # You do not need to enter './' when entering the path
 ```
 
 ## Features

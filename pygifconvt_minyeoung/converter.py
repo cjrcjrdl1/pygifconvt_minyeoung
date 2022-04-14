@@ -8,8 +8,8 @@ class GifConverter:
         path_out : 결과 이미지 경로(Ex : output/filename.gif)
         resize : 리사이징 크기((320,240))
         """
-        self.path_in = path_in or './*.png'
-        self.path_out = path_out or './output.gif'
+        self.path_in = './' + path_in or './*.png'
+        self.path_out = './' + path_out or './output.gif'
         self.resize = resize
 
     def convert_gif(self):
@@ -35,7 +35,7 @@ class GifConverter:
 
 if __name__ == '__main__':
     # 클래스
-    c = GifConverter('./project/images/*.png', './project/image_out/result.gif', (320,240))
+    c = GifConverter('project/images/*.png', 'project/image_out/result.gif', (320,240))
 
     # 변환
     c.convert_gif()
